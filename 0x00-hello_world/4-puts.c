@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <string.h>
-/*prints certain output using the puts command*/
+/**
+ * main - prints 
+ *
+ * outputs using puts function
+ * return 0
+ */
 int main(void)
 {
 	char str1[53];
