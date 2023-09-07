@@ -4,7 +4,8 @@
  * main - prints
  *
  * outputs using puts function
- * return: 0 just the output
+ *
+ * Return: 0 just the output
  */
 int main(void)
 {
