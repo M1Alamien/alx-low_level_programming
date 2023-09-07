@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main: certain output
+ * main - certain output
  *
- * outputs using printf function this time 
+ * outputs using printf function this time
  * Return: 0 all the time
  */
 int main(void)
