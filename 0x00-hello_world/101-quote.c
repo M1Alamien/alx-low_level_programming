@@ -8,6 +8,6 @@
  */
 int main()
 {
-	fprintf(stder, "and that piece of art is usefu\" - Dora Korpar, 2015-10-19");
+	fprintf(stderr, "and that piece of art is usefu\" - Dora Korpar, 2015-10-19");
 	return (1);
 }
