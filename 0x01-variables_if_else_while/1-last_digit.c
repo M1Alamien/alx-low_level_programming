@@ -5,7 +5,7 @@
  *main - prints last digit and compares
  *
  * compares the last digit of a long number
- * to see if it equals 0 or is greater than 5 
+ * to see if it equals 0 or is greater than 5
  * or less than 6 and prints the output
  * Return: 0 always
  */
@@ -24,12 +24,12 @@ int main(void)
 	if (last_digit > 5)
 	{
 		printf(" and is greater than 5\n");
-	} else if (last_digit == 0) 
+	} else if (last_digit == 0)
 	{
 		printf(" and is 0\n");
 	} else
 	{
-		printf(" is less than 6 and not 0\n");
+		printf(" and is less than 6 and not 0\n");
 	}
 	return (0);
 }
