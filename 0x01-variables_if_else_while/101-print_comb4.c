@@ -20,7 +20,7 @@ int main(void)
 		{
 			for (n3= 2; n3 <= 9; n3++)
 			{
-				if (n3 > n2 > n1)
+				if (n2 > n1 && n3 > n2)
 				{
 					putchar('0' + n1);
 					putchar('0' + n2);
