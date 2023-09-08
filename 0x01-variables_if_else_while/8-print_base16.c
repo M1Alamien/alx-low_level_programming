@@ -1,5 +1,10 @@
 #include <stdio.h>
-
+/**
+ * main - 0 to 9 & a to f
+ *
+ * prints the first 16 hexidecimal numbers
+ * Return: always 0
+ */
 int main(void)
 {
 	int hex;
