@@ -8,15 +8,12 @@
  */
 int main(void)
 {
-	char c = 'z';
+	char c;
 
-	if (c >= 'a')
+	for (c = 'z'; c >= 'a'; c--)
 	{
 		putchar(c);
-		c++;
-	} else
-	{
-		putchar('\n');
 	}
+	putchar('\n');
 	return (0);
 }
