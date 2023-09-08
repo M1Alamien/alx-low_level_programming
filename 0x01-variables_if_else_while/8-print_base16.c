@@ -3,6 +3,7 @@
 int main(void)
 {
 	int hex;
+	char c;
 
 	for (hex = 0; hex <= 9; hex++)
 	{
@@ -10,7 +11,7 @@ int main(void)
 	}
 	for (c = 'a'; c <= 'f'; c++)
 	{
-		putchar(c)
+		putchar(c);
 	}
 	putchar('\n');
 	return (0);
