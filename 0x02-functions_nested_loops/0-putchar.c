@@ -4,7 +4,12 @@
  *
  * output is _putchar
  * Return: 0 always
- */
+*/
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
 int main(void)
 {
 	char s[] = "_putchar";
