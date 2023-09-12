@@ -11,7 +11,7 @@ void print_alphabet_x10(void)
 	int x;
 	char s[] = "abcdefghijklmnopqrstuvwxyz";
 
-	for (x = 0; x < 11; x++)
+	for (x = 0; x < 10; x++)
 	{
 		for (i = 0; s[i] != '\0'; i++)
 		{
