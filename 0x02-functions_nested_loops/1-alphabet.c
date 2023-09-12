@@ -1,10 +1,11 @@
 #include "main.h"
 /**
  * main - abc
- *
+ * @c: char
  * prints the alphabet
  * Return: always 
  */
+int _putchar(char c);
 void print_alphabet(void)
 {
 	char s[] = "abcdefghijklmnopqrstuvwxyz";
@@ -12,7 +13,7 @@ void print_alphabet(void)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		_putchar(s[i]);
-		return (0);
+		return ();
 	}
 }
 int main(void)
