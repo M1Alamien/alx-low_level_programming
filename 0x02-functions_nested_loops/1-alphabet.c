@@ -13,7 +13,6 @@ void print_alphabet(void)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		_putchar(s[i]);
-		return ();
 	}
 }
 int main(void)
