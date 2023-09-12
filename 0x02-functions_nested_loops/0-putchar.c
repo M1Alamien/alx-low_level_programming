@@ -7,8 +7,6 @@
  * output is _putchar
  * Return: 0 always
  */
-int _putchar(char c);
-
 int main(void)
 {
 	char s[] = "_putchar";
