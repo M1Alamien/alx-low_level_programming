@@ -18,13 +18,14 @@ void times_table(void)
 		for (c = 0; c <= 9; c++)
 		{
 			r = i * c;
-			if (r > 10)
+			if (r >= 10)
 			{
 			ones = r % 10;
 			tens = r / 10;
 			_putchar('0' + tens);
 			_putchar('0' + ones);
-			} else
+			}
+			else
 			{
 			_putchar('0' + r);
 			}
