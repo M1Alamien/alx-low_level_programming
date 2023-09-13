@@ -5,11 +5,11 @@
  * outputs the absolute num. of input
  * Return: always +tive
  */
-int _abs(int)
+int _abs(int n)
 {
-	if (r < 0)
+	if (n < 0)
 	{
-		return (-r);
+		return (-n);
 	}
-	return (r);
+	return (n);
 }
