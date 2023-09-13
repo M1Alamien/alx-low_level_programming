@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _abs - absolute
+ * @n: int from main
  *
  * outputs the absolute num. of input
  * Return: always +tive
