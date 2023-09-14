@@ -3,9 +3,9 @@
 
 int _isuppur(int c)
 {
-	if (c <= 90 && c>= 65)
+	if (c <= 90 && c >= 65)
 	{
 		return (1);
 	}
-	retrun (0);
+	return (0);
 }
