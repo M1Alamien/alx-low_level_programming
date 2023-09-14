@@ -5,7 +5,8 @@
  * @c: int from main
  *
  * checks in uppercase or other
- * REturn: 1 or 0
+ * Return: 1 or 0
+ */
 int _isupper(int c)
 {
 	if (c <= 90 && c >= 65)
