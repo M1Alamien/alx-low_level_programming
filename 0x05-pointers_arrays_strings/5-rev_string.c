@@ -22,7 +22,7 @@ void rev_string(char *s)
 	}
 	i = 0;
 
-	while (i < ii)
+	while (ii > i)
 	{
 		char c = s[i];
 
