@@ -9,13 +9,8 @@
  */
 void puts_half(char *str)
 {
-	int i;
+	int i = _strlen(str);
 
-	for (i = 0; str[i] != '\0'; i++)
-	{
-
-	}
-	i = i - 1;
 	if (i % 2 != 0)
 	{
 		i = (i - 1) / 2;
@@ -33,4 +28,21 @@ void puts_half(char *str)
 		}
 	}
 	_putchar('\n');
+}
+/**
+ * _strlen - name
+ * @s: string from main
+ *
+ * return the length of string
+ * Return: i (lenght of string)
+ */
+int _strlen(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; ++i)
+	{
+
+	}
+	return (i);
 }
