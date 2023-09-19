@@ -20,12 +20,13 @@ void rev_string(char *s)
 	{
 		ii = i;
 	}
-	ii = i;
+	ii = i - 1;
 	i = 0;
 
 	while (ii > i)
 	{
 		char c = s[i];
+
 		s[i] = s[ii];
 		s[ii] = c;
 		i++;
