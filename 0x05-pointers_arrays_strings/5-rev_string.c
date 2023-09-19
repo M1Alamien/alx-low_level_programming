@@ -18,14 +18,14 @@ void rev_string(char *s)
 	}
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		ii = i - 1;
+		ii = i;
 	}
+	ii = i;
 	i = 0;
 
 	while (ii > i)
 	{
 		char c = s[i];
-
 		s[i] = s[ii];
 		s[ii] = c;
 		i++;
