@@ -13,26 +13,13 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
 		dest[i] = src[i];
 	}
-	return (dest);
-}
-/**
- * _strlen - name
- * @s: string from main
- *
- * returns lenght of string
- * Return: i
- */
-int _strlen(char *s)
-{
-	int i;
-
-	for (i = 0; s[i] != '\0'; ++i)
+	for ( ; i < n; i++)
 	{
-
+		dest[i] = '\0';
 	}
-	return (i);
+	return (dest);
 }
