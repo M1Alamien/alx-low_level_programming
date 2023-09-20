@@ -4,11 +4,11 @@ char *string_toupper(char *s)
 {
 	int i;
 
-	for (i = 0; *s != '\0'; i++, *s++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (*s > 96 && *s < 123)
+		if (s[i] > 96 && s[i] < 123)
 		{
-			*s = *s - 32;
+			s[i] = s[i] - 32;
 		}
 	}
 	return (s);
