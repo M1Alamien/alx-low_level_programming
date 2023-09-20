@@ -5,14 +5,13 @@
  * @src: string from main
  * @n: int from main
  *
- * takes n amount from src and 
+ * takes n amount from src and
  * puts it at the end of dest
  * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
 	int i;
-
 	int j = _strlen(dest);
 
 	for (i = 0; src[i] != '\0' && i < n; i++)
