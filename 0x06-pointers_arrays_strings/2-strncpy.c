@@ -11,7 +11,7 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int;
+	int i;
 
 	int j = _strlen(dest);
 	int k = _strlen(src);
