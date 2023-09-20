@@ -6,16 +6,16 @@
  * @n: int from main
  *
  * takes n amount from src and 
- * puts it the end of dest
+ * puts it at the end of dest
  * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
 	int i;
 
-	int j = _strlen(dest);
+	int j = _strlen(dest) - 1;
 
-	for (i = 0; i < n; i++)
+	for (i = 0; src[i] != '\0' && i < n; i++)
 	{
 		dest[i + j] = src[i];
 	}
