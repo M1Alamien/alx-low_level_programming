@@ -13,7 +13,7 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int i;
 
-	int j = _strlen(dest) - 1;
+	int j = _strlen(dest);
 
 	for (i = 0; src[i] != '\0' && i < n; i++)
 	{
@@ -29,7 +29,7 @@ char *_strncat(char *dest, char *src, int n)
  * return the lenght of string
  * Return: i
  */
- int _strlen(char *s)
+int _strlen(char *s)
 {
 	int i;
 
