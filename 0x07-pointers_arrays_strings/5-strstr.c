@@ -28,8 +28,6 @@ int _strcmp(char *s1, char *s2)
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int i;
-
 	for (; *haystack; haystack++)
 	{
 		if(*needle == *haystack)
