@@ -1,6 +1,24 @@
 #include "main.h"
 #include <stddef.h>
 /**
+ * _strcmp - name
+ * @s1: string from main
+ * @s2: string from main
+ *
+ * compares two strings
+ * Return: diff between the last compared
+ */
+int _strcmp(char *s1, char *s2)
+{
+	int i;
+
+	for (i = 0; s1[i] && s1[i] == s2[i]; ++i)
+	{
+
+	}
+	return ((s1[i]) - (s2[i]));
+}
+/**
  * _strstr - name
  * @haystack: string from main
  * @needle: string from main
@@ -10,19 +28,15 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j;
-	int k = 0;
+	int i;
 
-	for (i = 0; needle[i]; i++)
+	for (; *haystack; haystack++)
 	{
-		for (j = 0; haystack[j]; j++)
+		if(*needle == *haystack)
 		{
-			if(needle[i] == haystack[j])
-				k++;
+			if (!_strcmp(haystack, needle))
+			return (haystack);
 		}
 	}
-	if (k > 0)
-		return (haystack +j - i);
-	else
 		return (NULL);
 }
