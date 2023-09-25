@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strpbrk - name
  * @s: string from main
@@ -16,7 +17,7 @@ char *_strpbrk(char *s, char *accept)
 	{
 		for (j = 0; accept[j]; j++)
 		{
-			if (aacept[j] == s[i])
+			if (accept[j] == s[i])
 			{
 				return (s + i);
 			}
