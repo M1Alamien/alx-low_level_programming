@@ -38,8 +38,6 @@ int primecalc(int n, int x)
 		return (0);
 	}
 	else
-	{
 		return (primecalc(n, x + 1));
-	}
 
 }
