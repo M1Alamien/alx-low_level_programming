@@ -3,7 +3,7 @@
  * is_prime_number - name
  * @n: int from main
  *
- *  returns 1 if the input integer is a prime 
+ *  returns 1 if the input integer is a prime
  *  number, otherwise return 0
  *  Return: 0 or 1
  */
@@ -15,7 +15,7 @@ int is_prime_number(int n)
 	}
 	else
 	{
-		return(primecalc(n, 2));
+		return (primecalc(n, 2));
 	}
 }
 /**
