@@ -23,7 +23,7 @@ int _sqrt_recursion(int n)
  * @x: int = 0
  *
  * finds sqr of n from 0 to n/2
- * return: -1 or squareroot of n
+ * Return: -1 or squareroot of n
  */
 int squareroot(int n, int x)
 {
