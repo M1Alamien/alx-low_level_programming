@@ -39,6 +39,7 @@ int primecalc(int n, int x)
 	}
 	else
 	{
-		primecalc(n, x + 1);
+		return (primecalc(n, x + 1));
 	}
+
 }
