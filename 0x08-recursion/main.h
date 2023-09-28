@@ -11,3 +11,4 @@ int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int squareroot(int n, int x);
 int primecalc(int n, int x);
+int comp(char *s, char *t);
