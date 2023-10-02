@@ -9,7 +9,7 @@
  * prints the name of the program
  * Return: always 0
  */
-int main(argc, argv[])
+int main(int __attribute__((__unused__)) argc, char* argv[])
 {
 	printf("%s", argv[0]);
 	return (0);
