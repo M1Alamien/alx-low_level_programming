@@ -4,7 +4,7 @@
 /**
  * main - name
  * @argc: int from command line
- * @argv[]: string from command line
+ * @argv: string from command line
  *
  * prints the name of the program
  * Return: always 0
