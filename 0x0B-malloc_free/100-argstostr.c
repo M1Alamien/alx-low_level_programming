@@ -59,6 +59,7 @@ char *argstostr(int ac, char **av)
 	{
 		tlen = tlen + _strlen(av[i]) + 1;
 	}
+	tlen--;
 	s = malloc(tlen);
 	if (s == NULL)
 	{
