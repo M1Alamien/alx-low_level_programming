@@ -71,6 +71,7 @@ char *argstostr(int ac, char **av)
 		j = j + _strlen(av[i]) + 1;
 		s[j - 1] = '\n';
 	}
-	s[tlen - 1] = '\0';
+	s[tlen] = '\n';
+	s[tlen + 1] = '\0';
 	return (s);
 }
