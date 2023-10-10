@@ -1,3 +1,5 @@
+#include "dog.h"
+#include <stdlib.h>
 /**
  * free_dog - name
  * @d: struct from main
@@ -9,6 +11,6 @@ void free_dog(dog_t *d)
 {
 	free(d->name);
 	free(d->owner);
-	free(d->age);
+	d->age = 0.0;
 	free(d);
 }
