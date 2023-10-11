@@ -4,7 +4,7 @@
  * @name: string from main
  * @f: function from main
  *
- * prints a name
+ * prints a name entered as parameter
  * Return: void
  */
 void print_name(char *name, void (*f)(char *))
