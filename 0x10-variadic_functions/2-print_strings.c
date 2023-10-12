@@ -20,8 +20,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	sep = separator;
 	if (sep == NULL)
 		sep = "";
-	if (n == 0)
-		return;
+	if (n != 0)
+	{
 	va_start(sl, n);
 	for (i = 0; i < n; i++)
 	{
@@ -36,10 +36,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		else
 		{
 			if (temp == NULL)
-				printf("(nil)\n");
+				printf("(nil)");
 			else
-				printf("%s\n", temp);
+				printf("%s", temp);
 		}
 	}
+	}
+	printf("\n");
 	va_end(sl);
 }
