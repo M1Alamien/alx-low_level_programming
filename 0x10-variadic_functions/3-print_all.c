@@ -12,12 +12,14 @@ void print_all(const char * const format, ...)
 {
 	char *str;
 	char c;
-	int i;
+	int i, j = 0;
 	double f;
 	const char *args;
 	va_list lst;
 
 	va_start(lst, format);
+	if (format != NULL)
+	{
 	args = format;
 	while (*args)
 	{
@@ -48,6 +50,7 @@ void print_all(const char * const format, ...)
 		args++;
 		if (*args && (*args == 'c' || *args == 'i' || *args == 'f' || *args == 's'))
 			printf(", ");
+	}
 	}
 	printf("\n");
 }
