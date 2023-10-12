@@ -24,19 +24,20 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(sl, n);
 	for (i = 0; i < n; i++)
 	{
+		temp = va_arg(sl, char *);
 		if (i + 1 != n)
 		{
-			if (va_arg(sl, char *) == NULL)
+			if (temp == NULL)
 				printf("(nil)%s", sep);
 			else
-				printf("%s%s", va_arg(sl, char *), sep);
+				printf("%s%s", temp, sep);
 		}
 		else
 		{
-			if (va_arg(sl, char *) == NULL)
+			if (temp == NULL)
 				printf("(nil)\n");
 			else
-				printf("%s\n", va_arg(sl, char *));
+				printf("%s\n", temp);
 		}
 	}
 	va_end(sl);
