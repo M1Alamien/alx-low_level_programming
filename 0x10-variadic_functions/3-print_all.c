@@ -52,7 +52,7 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				str = va_arg(lst, char *);
-				printf("%s", s ? s : "(nil)");
+				printf("%s", str ? str : "(nil)");
 				break;
 			default:
 				break;
