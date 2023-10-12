@@ -19,13 +19,25 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	sep = separator;
 	if (sep == NULL)
 		sep = "";
+	if (n == 0)
+		return;
 	va_start(sl, n);
 	for (i = 0; i < n; i++)
 	{
 		if (i + 1 != n)
-			printf("%s%s", va_arg(sl, char *), sep);
+		{
+			if (va_arg(sl, char *) == NULL)
+				printf("(nil)%s", va_arg(sl, char *), sep);
+			else
+				printf("%s%s", va_arg(sl, char *), sep);
+		}
 		else
-			printf("%s\n", va_arg(sl, char *));
+		{
+			if (va_arg(sl, char *) == NULL)
+				printf("(nil)\n", va_arg(sl, char *));
+			else
+				printf("%s\n", va_arg(sl, char *));
+		}
 	}
 	va_end(sl);
 }
