@@ -17,7 +17,7 @@ int _strcmp(char ch, char *s)
 	{
 		if (ch == s[i])
 			return (1);
-		i++
+		i++;
 	}
 	return (0);
 }
