@@ -11,9 +11,8 @@
 void print_all(const char * const format, ...)
 {
 	char *str;
-	char c;
 	int i;
-	double f;
+	float f;
 	const char *args;
 	va_list lst;
 
@@ -26,15 +25,15 @@ void print_all(const char * const format, ...)
 		switch (*args)
 		{
 			case 'c':
-				c = va_arg(lst, int);
-				printf("%c", c);
+				i = va_arg(lst, int);
+				printf("%c", i);
 				break;
 			case 'i':
 				i = va_arg(lst, int);
 				printf("%d", i);
 				break;
 			case 'f':
-				f = va_arg(lst, double);
+				f = (float)va_arg(lst, double);
 				printf("%f", f);
 				break;
 			case 's':
