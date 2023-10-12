@@ -13,7 +13,7 @@ int _strcmp(char ch, char *s)
 {
 	int i;
 
-	for (i = 0; s[i]; ++i)
+	for (i = 0; s[i] != '\0'; ++i)
 	{
 		if (ch == s[i])
 			return (1);
@@ -24,7 +24,7 @@ int _strcmp(char ch, char *s)
  * print_all - name
  * @format: string from main
  *
- * prints anything
+ * prints anything inputted to func
  * Return: void
  */
 void print_all(const char * const format, ...)
