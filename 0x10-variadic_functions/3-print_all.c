@@ -35,8 +35,6 @@ void print_all(const char * const format, ...)
 
 
 	va_start(lst, format);
-	if (format != NULL && *format)
-	{
 	while (format && format[i])
 	{
 		switch (format[i])
@@ -60,7 +58,6 @@ void print_all(const char * const format, ...)
 		i++;
 		if (format[i] && _strcmp(format[i], cases))
 			printf(", ");
-	}
 	}
 	printf("\n");
 	va_end(lst);
