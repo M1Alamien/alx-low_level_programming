@@ -20,7 +20,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	sep = separator;
 
 	if (n == 0)
-		return;
+	{
 	if (sep == NULL)
 		sep = "";
 	for (i = 0; i < n; i++)
@@ -28,7 +28,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		if (i + 1 != n)
 			printf("%d%s", va_arg(pl, int), sep);
 		else
-			printf("%d\n", va_arg(pl, int));
+			printf("%d", va_arg(pl, int));
 	}
 	va_end(pl);
+	}
+	printf("\n");
 }
