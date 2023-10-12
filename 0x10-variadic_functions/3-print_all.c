@@ -12,7 +12,7 @@ void print_all(const char * const format, ...)
 {
 	char *str;
 	char c;
-	int i, j = 0;
+	int i;
 	double f;
 	const char *args;
 	va_list lst;
