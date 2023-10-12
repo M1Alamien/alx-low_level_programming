@@ -2,6 +2,25 @@
 #include <stdio.h>
 #include <stddef.h>
 /**
+ * _strcmp - name
+ * @ch: char from main
+ * @s: string from main
+ *
+ * checks if ch is in s
+ * Return: 0 or 1
+ */
+int _strcmp(char ch, char *s)
+{
+	int i;
+
+	for (i = 0; s[i]; ++i)
+	{
+		if (ch == s[i])
+			return (1);
+	}
+	return (0);
+}
+/**
  * print_all - name
  * @format: string from main
  *
@@ -10,31 +29,26 @@
  */
 void print_all(const char * const format, ...)
 {
-	char *str;
-	int i;
-	float f;
-	const char *args;
+	int i = 0;
+	char *str, *cases = "cifs";
 	va_list lst;
+
 
 	va_start(lst, format);
 	if (format != NULL && *format)
 	{
-	args = format;
-	while (*args)
+	while (format && format[i])
 	{
-		switch (*args)
+		switch (format[i])
 		{
 			case 'c':
-				i = va_arg(lst, int);
-				printf("%c", i);
+				printf("%c", va_arg(lst, int));
 				break;
 			case 'i':
-				i = va_arg(lst, int);
-				printf("%d", i);
+				printf("%d", va_arg(lst, int));
 				break;
 			case 'f':
-				f = (float)va_arg(lst, double);
-				printf("%f", f);
+				printf("%f", va_arg(lst, double));
 				break;
 			case 's':
 				str = va_arg(lst, char *);
@@ -46,8 +60,8 @@ void print_all(const char * const format, ...)
 			default:
 				break;
 		}
-		args++;
-		if (*args && (*args == 'c' || *args == 'i' || *args == 'f' || *args == 's'))
+		i++;
+		if (format[i] && _strcmp(format[i], cases))
 			printf(", ");
 	}
 	}
