@@ -30,7 +30,7 @@ int _strcmp(char ch, char *s)
 void print_all(const char * const format, ...)
 {
 	int i = 0;
-	char *str, *cases = "cifs";
+	char *str, *args = "cifs";
 	va_list lst;
 
 
@@ -56,7 +56,7 @@ void print_all(const char * const format, ...)
 				break;
 		}
 		i++;
-		if (format[i] && _strcmp(format[i], cases))
+		if (format[i] && _strcmp(format[i], args))
 			printf(", ");
 	}
 	printf("\n");
