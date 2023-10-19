@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include "lists.h"
 /**
  * add_node - name
@@ -22,6 +23,6 @@ list_t *add_node(list_t **head, const char *str)
 	}
 	temp->len = len1;
 	temp->next = *head;
-	*head = new;
+	*head = temp;
 	return (*head);
 }
