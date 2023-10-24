@@ -9,18 +9,15 @@
 int pop_listint(listint_t **head)
 {
 	int i = 0;
-	listint_t *tl;
+	listint_t *tl, *tl2;
 
-	if (head == NULL)
+	if (*head == NULL)
 		return (0);
-	else
-	{
-		tl = *head;
-		i = tl->n;
-		tl = tl->next;
-		free(head);
-		head = malloc(sizeof(listint_t));
-		*head = tl;
-	}
+
+	tl = *head;
+	i = tl->n;
+	tl2 = tl->next;
+	free(tl);
+	*head = tl2;
 	return (i);
 }
