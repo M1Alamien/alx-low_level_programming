@@ -4,7 +4,7 @@
  * @filename: filename
  * @letters: int
  * 
- *  reads a text file and prints the output
+ * reads a text file and prints the output
  * Return: 0 or num of letters printed
 */
 ssize_t read_textfile(const char *filename, size_t letters)
