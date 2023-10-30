@@ -1,5 +1,11 @@
 #include "main.h"
-
+/**
+ * make_buff - name
+ * @filename: file
+ *
+ * creates buff of 1024 bytes
+ * Return: buff
+ */
 char *make_buff(char *filename)
 {
 	char *buff;
@@ -12,7 +18,13 @@ char *make_buff(char *filename)
 	}
 	return (buff);
 }
-
+/**
+ * close_file - name
+ * @fd: int
+ *
+ * closes file
+ * Return: void
+ */
 void close_file(int fd)
 {
 	int i;
@@ -23,7 +35,14 @@ void close_file(int fd)
 		exit(100);
 	}
 }
-
+/**
+ * main - name
+ * @argc: num of args
+ * @argv: array of args
+ *
+ * copies the content of a file to another file
+ * Return: 0 or 97 or 98 or 99 or 100
+ */
 int main(int argc, char *argv[])
 {
 	int from, to, r, w;
