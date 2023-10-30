@@ -28,6 +28,7 @@ char *make_buff(char *filename)
 void close_file(int fd)
 {
 	int i;
+
 	i = close(fd);
 	if (i == -1)
 	{
